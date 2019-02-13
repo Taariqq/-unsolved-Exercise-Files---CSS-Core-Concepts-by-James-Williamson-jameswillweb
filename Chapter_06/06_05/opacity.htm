@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>opacity</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+body {
+	background: #ccc;
+	padding: 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	position:relative;
+	width: 600px;
+	background: #600;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+/*add styles here*/
+.banner1, .banner2 {
+	width: 470px;
+	height: 40px;
+	margin: 0 auto 2em;
+	background: #666;
+	font-size: 1.6em;
+	line-height: 40px;
+	color: #fff;
+	padding: 175px 0 0 15px;
+	position: relative;
+	left: 100px;
+}
+.banner1 {
+	background-image: url(_images/new.png), url(_images/featured.png), url(_images/sm_nyc_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: right top, 0 25px, left top;
+}
+.banner2 {
+	background-image: url(_images/new.png), url(_images/sm_philly_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: right top, left top;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="banner1">Visit our New York Gallery</div>
+<div class="banner2">Visit our Philadelphia Gallery</div>
+</div>
+</body>
+</html>

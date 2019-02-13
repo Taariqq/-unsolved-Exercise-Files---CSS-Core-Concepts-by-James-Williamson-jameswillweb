@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>multiple backgrounds</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+}
+/*add styles here*/
+div {
+	width: 470px;
+	height: 40px;
+	margin: 0 auto 2em;
+	background: #666;
+	font-size: 1.6em;
+	line-height: 40px;
+	color: #fff;
+	padding: 175px 0 0 15px;
+}
+.banner1 {
+	background-image: url(_images/new.png), url(_images/featured.png), url(_images/sm_nyc_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: right top, 0 25px, left top;
+}
+.banner2 {
+	background-image: url(_images/new.png), url(_images/sm_philly_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: right top, left top;
+}
+</style>
+</head>
+<body>
+<div class="banner1">Visit our New York Gallery</div>
+<div class="banner2">Visit our Philadelphia Gallery</div>
+</body>
+</html>

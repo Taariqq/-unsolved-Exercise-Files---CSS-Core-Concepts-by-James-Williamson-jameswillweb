@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>conflicting styles</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+aside {
+	width: 300px;
+	border: 1px solid #000;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+body {
+	font-family: Arial;
+	font-size: 90%;
+	width: 600px;
+}
+/*add styles here*/
+p {
+	font-size: 1em;
+	color: white;
+	background: tan;
+}
+p {
+	font-size: 1.2em;
+	color: black;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+<article>
+<h1>What happens when styles conflict?</h1>
+<p>Styles can conflict in many ways. Perhaps you have multiple style sheets applied to a page, and both style sheets have rules that target the same element. Likewise, the more complex your page structure becomes, the more likely you are to have nested elements that have different styling requirements than their parent elements. In that situation you're compelled to write conflicting styles to handle the formatting. Learning about why styles conflict, and what happens when they do, is an important part of learning CSS.</p>
+<p>This is another paragraph, just not as interesting as the one above it.</p>
+<h2>This is a subheading, sort of related to the stuff above it.</h2>
+<p>This is more paragraph text</p>
+</article>
+</body>
+</html>

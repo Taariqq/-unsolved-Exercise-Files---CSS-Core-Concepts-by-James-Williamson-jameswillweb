@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box-model</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+	overflow: hidden;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
+}
+/*add styles here*/
+div {
+	margin: 10px;
+	background: #3FF;
+	padding: 10px;
+	border: 1px solid #000;
+	width: 600px;
+}
+p {
+	background: #C90;
+	padding: 10px;
+	border: 1px solid #300;
+}
+
+</style>
+</head>
+<body>
+<div>
+<p>I'm a paragraph inside a div.</p>
+</div>
+<div>
+<p>I'm another paragraph inside a second div.</p>
+</div>
+</body>
+</html>

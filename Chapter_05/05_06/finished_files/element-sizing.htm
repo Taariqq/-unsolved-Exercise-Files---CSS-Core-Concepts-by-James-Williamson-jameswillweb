@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>element sizing</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+article, div, h1, p {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	background: #ccc;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+}
+article {
+	width: 600px;
+	border: 2px solid #000;
+	margin: 0 auto;
+	background: #fff;
+}
+h1 {
+	background: #333;
+	padding: 25px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 50px;
+}
+.one {
+	float: left;
+	width: 350px;
+	padding-left: 25px;
+	padding-right: 23px;
+	border-right: 2px solid black;
+	height: 500px;
+	text-align: justify;
+}
+.two {
+	float: right;
+	width: 150px;
+	padding: 0 25px;
+	height: 500px;
+	text-align: justify;
+}
+.last {
+	padding: 25px;
+	border-top: 1px solid black;
+	clear: both;
+}
+/*add styles here*/
+</style>
+</head>
+<body>
+<article>
+<h1>Defining element size</h1>
+<div class="one">This text is inside a div tag. I'm creating two columns inside the parent article tag. I have 600px of space to work with, so I need to make sure that each of the div tags, and the space between them doesn't exceed 600px.</div>
+<div class="two">This text is in another div tag. They're being positioned beside each other through the "float" property, which is a very common way of making elements appear beside each other. You'll learn more about the float property in the <em>CSS: Page Layout</em> title.</div>
+<p class="last">If no height is defined, the height of the elements will be calculated based on borders, padding, and content.</p>
+</article>
+</body>
+</html>

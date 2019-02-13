@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class and ID considerations</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body {
+	font-size: 90%;
+	font-family: Georgia;
+}
+/*add styles here*/
+.date {
+	font-weight: bold;
+	color: navy;
+}
+.artist {
+	font-weight: bold;
+	font-style: italic;
+	color: brown;
+}
+#mainHeader {
+	background: gray;
+	color: white;
+	padding: 15px;
+}
+#featuredArtist {
+	width: 300px;
+	padding: 15px;
+	background: tan;
+}
+
+</style>
+</head>
+<body>
+<header id="mainHeader">
+<h1>Welcome to Desolve.org</h1>
+</header>
+<article id="news">
+<h1>Latest News</h1>
+<p>I am a paragraph, and contain information relating to the headline. Any time an artist's name is used, I'd like it identified each time it appears in my content, something I can't currently do with HTML elements alone, even though I can <em>emphasize</em> certain text, or make text <strong>stand out</strong> from the text around it, as these elements don't convey any meaning.</p>
+<ul>
+<li><span class="artist">Toby Malina</span> will be in Miami on <span class="date">January 15th.</span></li>
+<li>A new exhibit from <span class="artist">Jeff Layton</span> will open in New York starting in <span class="date">May</span>.</li>
+<li>Meet <span class="artist">Shea Hansen</span> at the Cheek Chastain gallery in Columbia, SC on <span class="date">April 13th</span></li>
+</ul>
+</article>
+<aside id="featuredArtist">
+<h1>Featured Artist</h1>
+<h2 class="artist">Simon Allardice</h2>
+<p>I am a paragraph that contains information pertaining to the secondary area. I include information about <span class="artist">Simon Allardice</span> as well.</p>
+</aside>
+<footer id="pageFooter">
+<p>copywrite and legal disclaimer</p>
+</footer>
+</body>
+</html>

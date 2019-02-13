@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pseudo-class  selectors</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body {
+	font-family: Arial;
+	font-size: 100%;
+	margin: 50px 0 0 50px;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0 50px;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	width: 175px;
+}
+a:link {
+	text-decoration: none;
+	background: maroon;
+	color: white;
+	display: block;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	
+}
+a:visited {
+	color: black;
+}
+a:hover {
+	background: brown;
+}
+a:active {
+	background: green;
+}
+a:target {
+	color: red;
+}
+/*add styles here*/
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="products.htm" title="products">Products</a></li>
+  <li><a href="about.htm" title="about us">About</a></li>
+  <li><a href="contact.htm" title="contact us">Contact</a></li>
+  <li><a href="register.htm" title="sign up!">Register</a></li>
+</ul>
+<p><a id="target">Target</a></p>
+</body>
+</html>

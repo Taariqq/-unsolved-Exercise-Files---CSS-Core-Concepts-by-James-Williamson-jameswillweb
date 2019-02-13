@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>child selectors</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body, h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: gray;
+}
+body {
+	font-family: Arial;
+	font-size: 100%;
+	width: 600px;
+	background: white;
+	margin: 0 auto;
+}
+article {
+	padding: 0 25px;
+}
+aside {
+	width: 300px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+	font-size: 85%;
+	padding: 10px;
+}
+h1 {
+	font-family: Georgia;
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-top: 1em;
+}
+h2 {
+	font-family: Georgia;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-bottom: 0;
+	color: #42403E;
+	border-bottom: 1px solid #42403E;
+}
+p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+footer {
+	background: #42403E;
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+}
+header h1 {
+	background: #42403E;
+	text-align: center;
+	line-height: 75px;
+	color: white;
+}
+/*add styles here*/
+h1 + p, h2 + p {
+	margin-top: .6em;
+	font-style: italic;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>This is the site's main heading</h1>
+</header>
+<article>
+<h1>This is the article's main headline</h1>
+<p>This is a paragraph inside the main content. This text should be larger and have more line spacing than the text in the asides.</p>
+<p>This is another paragraph. I need to have enough text in this paragraph to create multiple lines of text, so I can see the line spacing and space between paragraphs. Often people use lorem ipsum text to mock up several paragraphs of text. I considered using that here, but decided that you were probably tired of reading lorem ipsum text. It doesn't really mean anything anyway. Occasionally I'll feed it into Google's translator to see if anything comes out. Usually just single words, like "honey" or "shaded." It's like trying to read William S. Burroughs.</p>
+<h2>This is a subheading</h2>
+<p>This is more paragraph text. I'd like to do something special with the first paragraph after a subheading. Perhaps italicize it, or adjust the margin between them.</p>
+<p>This is another paragraph, more body copy that follows the subheading, but it is not directly after it, so I don't want it to receive the same styling as the paragraph above it.</p>
+<p>Yet another body copy paragraph, this one is only here to add weight to the styling.</p>
+<h2>Another subheading</h2>
+<p>Since this is directly after a heading 2, and is both are inside the same parent element, I expect it to get the same styling.</p>
+<p>Adjacent selectors are also really good at styling commonly repeating structures, like complex blockquotes or sidebars that have the same structure over and over. Adjacent selectors allow you to consistently target elements within those structures without having to resort to class attributes for styling.</p>
+</article>
+<footer>
+<p>copyright and legal disclaimer</p>
+</body>
+</html>

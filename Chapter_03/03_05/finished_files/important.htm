@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>specificity</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+body {
+	font-family: Georgia;
+	font-size: 120%;
+}
+/*add styles here*/
+p {
+	color: red !important; 
+}
+#mainContent p {
+	color: green;
+}
+</style>
+</head>
+<body>
+<section id="mainContent">
+<p style="color:purple">I am a paragraph nested inside a section. I also have a <strong>strong tag</strong> nested inside of me.</p>
+</section>
+</body>
+</html>

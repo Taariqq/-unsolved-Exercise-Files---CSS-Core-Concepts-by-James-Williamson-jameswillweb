@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>element spacing</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+article, div, h1, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: url(images/grid.gif);
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+}
+.one, .two {
+	background: rgba(227,208,123,.6);
+	border: 1px solid #000;
+	width: 98px;
+	height: 98px;
+	float: left;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: center;
+}
+.two {
+
+}
+div {
+	clear: both;
+	background: rgba(178,143,166,.6)
+}
+p{
+	background: rgba(136,180,187,.6);
+	height: 50px;
+	line-height: 50px;
+}
+.three {
+
+}
+.four {
+
+}
+/*add styles here*/
+</style>
+</head>
+<body>
+<article>
+<h1 class="one">I am object 1</h1>
+<h1 class="two">I am object 2</h1>
+<div class="three">
+<p>I'm a paragraph inside a div.</p>
+<p>I am a second paragraph, inside the first div</p>
+</div>
+<div class="four">
+<p>I'm another paragraph inside a second div.</p>
+</div>
+</article>
+</body>
+</html>

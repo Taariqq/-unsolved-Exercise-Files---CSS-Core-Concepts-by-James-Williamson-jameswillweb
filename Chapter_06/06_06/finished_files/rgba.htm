@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>rgba &amp; hsla</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+body {
+	background: #ccc;
+	padding: 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	position:relative;
+	width: 600px;
+	background: #9cf url(_images/tweet_90.png);
+	margin: 0 auto;
+	padding: 25px 0;
+}
+/*add styles here*/
+.banner1, .banner2 {
+	width: 470px;
+	height: 40px;
+	margin: 0 auto 2em;
+	background: #666;
+	font-size: 1.6em;
+	line-height: 40px;
+	padding: 175px 0 0 15px;
+	position: relative;
+	left: 100px;
+	border: 4px solid rgb(60, 60, 60);
+}
+.banner1 {
+	background: rgba(102,0,0, .2);
+	color: rgb(255, 255, 255);
+}
+.banner2 {
+	background: hsla(65, 80%, 50%, .6);
+	color: hsl(65, 100%, 100%);
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="banner1">RGBA transparency</div>
+<div class="banner2">HSLA transparency</div>
+</div>
+</body>
+</html>

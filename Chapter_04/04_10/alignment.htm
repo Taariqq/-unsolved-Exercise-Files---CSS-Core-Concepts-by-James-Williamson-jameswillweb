@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text alignment</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html {
+	background-color: white;
+}
+body {
+	width: 40%;
+	margin: 0 auto;
+	font: 100%/1.5 Georgia, "Times New Roman", Times, serif;
+	background-color: yellow;
+	padding:50px;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.4em;
+}
+p {
+	font-size: 1em;
+}
+/*add styles here*/
+
+</style>
+</head>
+<body>
+<article>
+<h1>Text alignment</h1>
+<p>For the most part, text alignment is pretty straightforward. You set alignment through the text-align property, which accepts the left, right, center, justify, or inherit values.</p>
+<p class="left">Left alignment is the default alignment for most user agents and will be used if no text-align property is specified.</p>
+<p class="right">Right alignment aligns the text to the right-most edge of the parent element.</p>
+<p class="center">Center alignment centers each line of text within parent elements. Line breaks are determined by how the line fits into the parent element. The spacing between words is never adjusted for center aligned text.</p>
+<p class="justify">Justify specifies that inline-level boxes (such as individual lines of text) within each element box align equally respective to the boxes' left and right sides. To do this, user agents are allowed to expand or contract the contents of inline boxes, although no algorithm is specified, leaving it up to the user agents to determine how to implement it.</p>
+<p>You can also control hyphenation by using the hyphen property. Let's say I used a lot of long compound words that will likely need hyphenation like bookkeeper, prerequisite, lighthouse, and lycanthrope. By using hyphens I can control how the browser controls hyphenation. This property is still experimental, so if we use it we'll need to us vendor-prefixes.</p>
+</article>
+</body>
+</html>

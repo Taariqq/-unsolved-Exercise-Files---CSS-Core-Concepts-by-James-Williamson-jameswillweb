@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using web fonts</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+/*font family declarations*/
+@font-face {
+	font-family: 'Cantarell';
+	src: url('_fonts/Cantarell-Regular-webfont.eot');
+	src: url('_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('_fonts/Cantarell-Oblique-webfont.eot');
+	src: url('_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('_fonts/Cantarell-Bold-webfont.eot');
+	src: url('_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('_fonts/Cantarell-BoldOblique-webfont.eot');
+	src: url('_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+aside, article, section, header, footer, nav {
+	display: block;
+}
+body {
+	width: 600px;
+	font-family: Cantarell, Arial, Helvetica, sans-serif;
+}
+/*add styles here*/
+a {
+	font-style: italic;
+}
+
+</style>
+</head>
+<body>
+<article>
+<h1>Setting the font-family property.</h1>
+<p>Designers can now choose between system fonts, and web fonts when defining which fonts to use on a page. System fonts are the common fonts shipped with most operating systems; fonts such as Arial, Helvetica, Verdana, Georgia, Times New Roman, and others. When using system fonts, you are relying on the client machine to have the font installed. This saves overhead, and allows you to rely on fonts that have a long and solid track record.</p>
+<p>Web fonts, on the other hand, allow designers to use the @font-face inline rule to define a font-family to use within the page. The font is an external resource that the browser then requests and uses on the page. This allows designers to use any font they want, without having to worry about whether or not it's installed on the client machine. This technique requires that the designer either host the font themselves, or use one of the many font hosting services available. For more information on @font-face, check out my lynda.com title, <a href="http://www.lynda.com/Web-Design-tutorials/web-fonts-first-look/73564-2.html" target="_blank" title="Web Fonts First Look">Web Fonts First Look.</a></p>
+</article>
+</body>
+</html>

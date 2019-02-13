@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Font shorthand notation</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+body {
+	width: 600px;
+	font: 100%/1.5 Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.4em;
+}
+p {
+	font-size: 1em;
+}
+.shorthand {
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+}
+.keyword {
+	font: status-bar;
+}
+/*add styles here*/
+
+</style>
+</head>
+<body>
+<article>
+<h1>Font shorthand notation.</h1>
+<p>Using font shorthand notation we can set the following font properties using just a single declaration:</p>
+<ul>
+  <li>font-style</li>
+  <li>font-variant</li>
+  <li>font-weight</li>
+  <li>font-size</li>
+  <li>line-height</li>
+  <li>font-family</li>
+</ul>
+<p>While we don't have to explicitly set each one, we are required to define font-family and font-size each time we use it. If we fail to set a value for any of the remaining font properties, the default value is assigned. This can actually cause other values to be overwritten if care is not taken when writing the syntax.</p>
+<h2 class="shorthand">For example, headings are typically bold by default.</h2>
+<h2>Optional keywords.</h2>
+<p>You an also use a set of optional keywords which instructs the user agent to use the font formatting used by those system fonts. This is especially useful when creating applications or UI widgets:</p>
+<ul class="keyword">
+  <li>caption</li>
+  <li>icon</li>
+  <li>menu</li>
+  <li>message-box</li>
+  <li>small-caption</li>
+  <li>status-bar</li>
+</ul>
+</article>
+</body>
+</html>

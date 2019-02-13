@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin and padding shorthand</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	background: #fff;
+}
+/*add styles here*/
+div {
+	border: 1px solid black;
+}
+.margin {
+	margin: 30px;
+	background: #ccc;
+}
+.padding {
+	padding: 30px;
+	background: #ccc;
+}
+</style>
+</head>
+<body>
+<div>
+<p class="margin">I will be controlled through margins</p>
+<p class="padding">I will be controlled through padding</p>
+</div>
+</body>
+</html>

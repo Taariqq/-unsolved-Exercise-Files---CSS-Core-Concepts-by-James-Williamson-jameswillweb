@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>line spacing</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html {
+	background-color: white;
+}
+body {
+	width: 50%;
+	margin: 0 auto;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	padding:50px;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.4em;
+}
+p {
+	font-size: 1em;
+}
+span {
+	background: yellow;
+}
+/*add styles here*/
+
+</style>
+</head>
+<body>
+<article>
+<h1>Line height</h1>
+<p>Leading, or line spacing, is controlled in CSS through the line-height property. You can use any unit of measurement with line-height, and it is unique in that it allows you to use a &quot;multiple&quot; value as well. Multiples are a single number with no unit of measurement specified, the number simply acts as a multiple of the current element's font-size.</p>
+<h2>How it's calculated</h2>
+<p>The line-height value is used to specify the minimal height of line boxes within an element. If you want to visualize an element's line box, simply place a background color behind an element element with no padding. <span>Like this text, for example, which is in a span tag.</span> The minimum height is determined by calculating the minimum height above the baseline and a minimum height below it.</p>
+<h2 class="center">Other uses</h2>
+<p>Line-height is often used to center single line text vertically within a box. Take the above headline, by giving it a background color and a line-height to either match or set the element's height, and the text is vertically centered, as it &quot;floats&quot; in the middle of it's line-height. Try it!</p>
+<h2>Things to consider</h2>
+<p>If you use relative units of measurement with line-height, or a multiple, the value is calculated based on the font-size of the element it is applied to. If no font-size is explicitly set, the font-size of the parent element is used. In the case of element's inheriting line-height, they usually inherit the calculated value, meaning that if you set a parent element to 1em, that value will be calculated and passed down to all child elements. However, if you set line-height in multiples, the multiple itself is passed down, letting the children calculate  line-height values from their own font-size.</p>
+</article>
+</body>
+</html>

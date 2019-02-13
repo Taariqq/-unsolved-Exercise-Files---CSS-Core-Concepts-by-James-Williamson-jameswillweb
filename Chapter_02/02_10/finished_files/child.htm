@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>child selectors</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body, h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: gray;
+}
+body {
+	font-family: Arial;
+	font-size: 100%;
+	width: 600px;
+	background: white;
+	margin: 0 auto;
+}
+article {
+	padding: 0 25px;
+}
+aside {
+	width: 300px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+	font-size: 85%;
+	padding: 10px;
+}
+h1 {
+	font-family: Georgia;
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+h2 {
+	font-family: Georgia;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-bottom: .6em;
+}
+p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+footer {
+	background: #42403E;
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+}
+/*add styles here*/
+header h1 {
+	background: #42403E;
+	text-align: center;
+	line-height: 75px;
+	color: white;
+}
+aside p {
+	line-height: 1.2;
+}
+article > h2 {
+	color: #7D6855;
+}
+aside ol > li {
+	font-style: italic;
+	color: red;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>This is the site's main heading</h1>
+</header>
+<article>
+<h1>This is the article's main headline</h1>
+<p>This is a paragraph inside the main content. This text should be larger and have more line spacing than the text in the asides.</p>
+<p>This is another paragraph. I need to have enough text in this paragraph to create multiple lines of text, so I can see the line spacing and space between paragraphs. Often people use lorem ipsum text to mock up several paragraphs of text. I considered using that here, but decided that you were probably tired of reading lorem ipsum text. It doesn't really mean anything anyway. Occasionally I'll feed it into Google's translator to see if anything comes out. Usually just single words, like "honey" or "shaded." It's like trying to read William S. Burroughs.</p>
+<h2>This is a subheading</h2>
+<p>This is more paragraph text</p>
+<aside class="upcoming">
+<h2>This is the first aside's heading</h2>
+<p>This aside discusses upcoming events. I'd like these two asides to look very similar, but have subtle differences that allow you to tell which one is which.</p>
+</aside>
+<aside class="specials">
+<h2>Featured specials</h2>
+<p>This aside discusses featured specials. Again, it should be very similar to the previous aside, but have a few subtle styling differences. We could use the class values for both of them to do this.</p>
+<ul>
+<li>This is a list of specials</li>
+<li>Each item is a separate special
+<ol><li>point one</li>
+<li>point two</li>
+<li>point three</li>
+</ol>
+</li>
+<li>The final point</li>
+</ul>
+</aside>
+<h2>Subheading for upcoming dates</h2>
+<p>paragraph text explaining something like how to participate in upcoming events</p>
+<ul>
+<li>upcoming date 1</li>
+<li>upcoming date 2
+<ol>
+<li>appearance 1</li>
+<li>appearance 2</li>
+<li>appearance 3</li>
+</ol>
+</li>
+<li>final date</li>
+</ul>
+</article>
+<footer>
+<p>copyright and legal disclaimer</p>
+</body>
+</html>

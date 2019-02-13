@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pseudo-element selectors</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+
+html, body, h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: gray;
+}
+
+body {
+	font-family: Arial;
+	font-size: 100%;
+	width: 600px;
+	background: white;
+	margin: 0 auto;
+}
+
+article {
+	padding: 0 25px;
+}
+
+aside {
+	width: 300px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+	font-size: 85%;
+	padding: 10px;
+}
+
+h1 {
+	font-family: Georgia;
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-top: 1em;
+}
+
+h2 {
+	font-family: Georgia;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-bottom: 0;
+	color: #42403E;
+	border-bottom: 1px solid #42403E;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+
+footer {
+	background: #42403E;
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+}
+
+header h1 {
+	background: #42403E;
+	text-align: center;
+	line-height: 75px;
+	color: white;
+}
+
+h1 + p, h2 + p {
+	margin-top: .6em;
+}
+a {
+	color: red;
+	text-decoration: none;
+}
+
+/*add styles here*/
+h1 + p::first-line {
+	font-family:Georgia;
+	font-style: italic;
+}
+h1 + p::first-letter{
+	font-size: 3em;
+	font-family: Georgia;
+	float: left;
+	padding: 10px 5px 0 0;
+}
+a::after {
+	content: " [" attr(href) "]";
+	color: #666;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>This is the site's main heading</h1>
+</header>
+<article>
+  <section>
+    <h1>This is the article's main headline</h1>
+    <p>This is a paragraph inside the main content. I would like to have a drop-cap for this paragraph, and italicize the first line. This should give me dramatic effect I'm looking for. It's not that I like drama, just that I need a little more text here, and wanted to show a more real-world example of pseudo-element selectors can help you write more efficient styles.</p>
+    <p>This is another paragraph. I need to have enough text in this paragraph to create multiple lines of text, so I can see the line spacing and space between paragraphs. Often people use lorem ipsum text to mock up several paragraphs of text. I considered using that here, but decided that you were probably tired of reading lorem ipsum text. It doesn't really mean anything anyway. Occasionally I'll feed it into Google's translator to see if anything comes out. Usually just single words, like "honey" or "shaded." It's like trying to read William S. Burroughs.</p>
+  </section>
+  <section>
+  <p><a href="http://www.lynda.com" title="visit lynda.com">Article reference</a></p>
+  </section>
+</article>
+<footer>
+<p>copyright and legal disclaimer.</p>
+</body>
+</html>

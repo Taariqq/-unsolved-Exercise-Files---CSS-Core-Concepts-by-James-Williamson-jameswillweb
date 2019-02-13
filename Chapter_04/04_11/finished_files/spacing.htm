@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>word and letter spacing</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html {
+	background-color: white;
+}
+body {
+	width: 60%;
+	margin: 0 auto;
+	font: 100%/1.5 "Deja Vu Sans" Constantia, Times, serif;
+	background-color: tan;
+	padding:50px;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.4em;
+}
+p {
+	font-size: 1em;
+}
+a {
+	color: white;
+}
+/*add styles here*/
+.letter {
+	letter-spacing: 5px;
+}
+.word {
+	word-spacing: 10px;
+}
+h2.render, h2.speed {
+	font-size: 60px;
+	margin: 0;
+}
+.render {
+	text-rendering: optimizeLegibility;
+}
+.speed {
+	text-rendering: optimizeSpeed;
+}
+</style>
+</head>
+<body>
+<article>
+<h1>Word and letter spacing</h1>
+<p>CSS gives you control over word and letter spacing through the word-spacing and letter-spacing properties.</p>
+<h2 class="letter">Practice using letter-spacing</h2>
+<h2 class="word">Practice using word-spacing</h2>
+<h2 class="render">Text rendering matters</h2>
+<h2 class="speed">Text rendering matters</h2>
+<p class="render">The addition of support for OpenType and TrueType fonts will eventually lead to expanded kerning capabilities when formatting your text. Although not everything that has been added to them is currently implemented by browsers, you can learn more about how typographic capabilities are evolving by reading through the <a href="http://www.w3.org/TR/css3-text/" title="Text level 3" target="_blank">CSS Text Level 3</a> and the <a href="http://dev.w3.org/csswg/css3-fonts/" title="Fonts level 3" target="_blank">CSS Fonts Level 3</a> specifications.</p>
+<p class="render">Although it is not part of either specification, the text-render property (actually found in the <a href="http://www.w3.org/TR/SVG11/painting.html#TextRenderingProperty" title="text rendering" target="_blank">SVG specification</a>) allows you to improve the legibility of type through browser rendering. This can effect kerning pairs and the use of ligatures. </p>
+</article>
+</body>
+</html>

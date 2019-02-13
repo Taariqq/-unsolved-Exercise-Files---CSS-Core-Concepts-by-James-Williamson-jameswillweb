@@ -1,0 +1,13 @@
+body {
+	font-family: Arial;
+	color: gray;
+}
+
+h1, h2, h3 {
+	color: black;
+}
+
+div h2 {
+	color: maroon;
+}
+
